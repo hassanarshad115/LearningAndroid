@@ -2,9 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.hsnlearning.learningandroid">
 
-   <!-- internet ki permission k lye-->
-    <uses-permission android:name="android.permission.INTERNET"/>
-
+    <!-- internet ki permission k lye -->
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -20,9 +19,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ToolbarAndroid" />
-        <activity android:name=".SpinnerFolderActivity.Spinner1" />
-        <activity android:name=".LoadImageFromUrlFolder.LoadImageFromUrl"></activity>
+        <activity android:name=".ToolbarFolder.ToolbarAndroid" />
+        <activity android:name=".SpinnerFolder.Spinner1" />
+        <activity android:name=".LoadImageFromUrlFolder.LoadImageFromUrl" />
+        <activity android:name=".SlideImageWithViewPagerFolder.SlideImageViewPagerActivity"></activity>
     </application>
 
 </manifest>

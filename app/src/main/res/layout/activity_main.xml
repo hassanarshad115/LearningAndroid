@@ -44,6 +44,11 @@
             android:layout_height="wrap_content"
             android:text="go to Load Img Url"
             android:id="@+id/loadimageurlbtn"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/SlidingImagewithViewPager"
+            android:id="@+id/SlidingImagewithViewPagerbtn"/>
     </LinearLayout>
 
 

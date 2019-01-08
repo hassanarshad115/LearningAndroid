@@ -1,4 +1,4 @@
-package com.hsnlearning.learningandroid.SpinnerFolderActivity;
+package com.hsnlearning.learningandroid.SpinnerFolder;
 
 import android.app.Activity;
 import android.content.Context;
@@ -15,6 +15,7 @@ import com.hsnlearning.learningandroid.R;
 
 import java.util.List;
 
+//spinner k lye base aapter hoga
 public class SpinnerAdapter extends BaseAdapter {
     private List<String> listData;
     private Activity activity;
@@ -45,7 +46,7 @@ public class SpinnerAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         View view = convertView;
         if (convertView == null) {
-            view = layoutInflater.inflate(R.layout.spinner_item1, null);
+            view = layoutInflater.inflate(R.layout.spinner_item_rf, null);
             TextView tv = view.<TextView>findViewById(R.id.txtviewSpinner1);
             tv.setText(listData.get(position));
         }

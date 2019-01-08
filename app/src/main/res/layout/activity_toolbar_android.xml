@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ToolbarAndroid">
+    tools:context=".ToolbarFolder.ToolbarAndroid">
 
     <include
         android:id="@+id/toolbar1"
-        layout="@layout/fortoolbar" />
+        layout="@layout/fortoolbar_rf" />
 
 
 </LinearLayout>

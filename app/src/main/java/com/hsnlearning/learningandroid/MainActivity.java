@@ -8,11 +8,13 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.hsnlearning.learningandroid.LoadImageFromUrlFolder.LoadImageFromUrl;
-import com.hsnlearning.learningandroid.SpinnerFolderActivity.Spinner1;
+import com.hsnlearning.learningandroid.SlideImageWithViewPagerFolder.SlideImageViewPagerActivity;
+import com.hsnlearning.learningandroid.SpinnerFolder.Spinner1;
+import com.hsnlearning.learningandroid.ToolbarFolder.ToolbarAndroid;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button btn1,spinner1btn,loadimgurlbtn;
+    Button btn1, spinner1btn, loadimgurlbtn, slideimageviewpagerbtn;
     TextView textView1;
 
     @Override
@@ -20,21 +22,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btn1= this.<Button>findViewById(R.id.btn1);
-        spinner1btn= this.<Button>findViewById(R.id.spinner1);
+        btn1 = this.<Button>findViewById(R.id.btn1);
+        spinner1btn = this.<Button>findViewById(R.id.spinner1);
 
         //dosra treeka
-        loadimgurlbtn= this.<Button>findViewById(R.id.loadimageurlbtn);
+        loadimgurlbtn = this.<Button>findViewById(R.id.loadimageurlbtn);
         loadimgurlbtn.setOnClickListener(this);
+        //SlidingImagewithViewPager
+        slideimageviewpagerbtn = this.<Button>findViewById(R.id.SlidingImagewithViewPagerbtn);
+        slideimageviewpagerbtn.setOnClickListener(this);
 
-        textView1= this.<TextView>findViewById(R.id.txtview1);
+        textView1 = this.<TextView>findViewById(R.id.txtview1);
 
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent(MainActivity.this,ToolbarAndroid.class));
+                startActivity(new Intent(MainActivity.this, ToolbarAndroid.class));
             }
         });
 
@@ -50,7 +55,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         spinner1btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,Spinner1.class));
+                startActivity(new Intent(MainActivity.this, Spinner1.class));
             }
         });
 
@@ -61,9 +66,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        int id=v.getId();
-        if (id==R.id.loadimageurlbtn){
-            startActivity(new Intent(MainActivity.this,LoadImageFromUrl.class));
+        int id = v.getId();
+        if (id == R.id.loadimageurlbtn) {
+            startActivity(new Intent(MainActivity.this, LoadImageFromUrl.class));
         }
+        if (id == R.id.SlidingImagewithViewPagerbtn) {
+            startActivity(new Intent(MainActivity.this, SlideImageViewPagerActivity.class));
+        }
+
     }
 }

@@ -12,7 +12,7 @@ public class LoadImageFromUrl extends AppCompatActivity {
 
     ImageView imageView;
     //String url="https://xshyfc.com/wp-content/uploads/data/2018/2/27/Wallpapers-1080-X-1920wallpapers-1080-x-1920-1080x1920-for-iphone-5s-PIC-WPXH445343.jpg";
-    String url = "http://i.imgur.com/DvpvklR.png";
+    String url = "https://avatars1.githubusercontent.com/u/25689980?s=460&v=4";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

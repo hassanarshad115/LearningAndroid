@@ -1,4 +1,4 @@
-package com.hsnlearning.learningandroid;
+package com.hsnlearning.learningandroid.ToolbarFolder;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
+
+import com.hsnlearning.learningandroid.R;
 
 public class ToolbarAndroid extends AppCompatActivity {
     Toolbar toolbar1;
@@ -24,7 +26,7 @@ public class ToolbarAndroid extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_menu1,menu);
+        getMenuInflater().inflate(R.menu.menu_menu_rf,menu);
         return  true;
     }
 

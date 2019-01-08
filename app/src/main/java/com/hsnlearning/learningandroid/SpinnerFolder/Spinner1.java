@@ -1,4 +1,4 @@
-package com.hsnlearning.learningandroid.SpinnerFolderActivity;
+package com.hsnlearning.learningandroid.SpinnerFolder;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

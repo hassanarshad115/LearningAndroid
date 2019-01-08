@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">LearningAndroid</string>
+    <string name="SlidingImagewithViewPager"> Sliding Image with ViewPager</string>
 </resources>
