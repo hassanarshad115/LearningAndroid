@@ -54,7 +54,11 @@
             android:layout_height="match_parent"
             android:text="go to zooming"
             android:id="@+id/zoomingbtn"/>
-
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="go to Bottom Sheet View"
+            android:id="@+id/bottomsheetviewbtn"/>
 
     </LinearLayout>
 

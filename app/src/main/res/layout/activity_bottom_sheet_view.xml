@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainContentParentBottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:fitsSystemWindows="true"
+    tools:context=".BottomSheetViewFolder.BottomSheetViewActivity">
+
+    <!--    sbys oper iskka layout change krna hoga phly baki kaam bad m krny hain-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <Button
+                android:id="@+id/bottomsheetviewbtn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@android:color/holo_green_dark"
+                android:paddingTop="16dp"
+                android:text="Bottom sheet view button 1"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/bottomsheetviewbtn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@android:color/holo_blue_dark"
+                android:paddingTop="16dp"
+                android:text="Bottom sheet view button 2"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/bottomsheetviewbtn3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@android:color/holo_red_dark"
+                android:paddingTop="16dp"
+                android:text="Bottom sheet view button 3"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:clipToPadding="true"
+        android:background="@android:color/holo_orange_light"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp"
+            android:text="Bottom Sheet"
+            android:textSize="25sp" />
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

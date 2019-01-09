@@ -24,6 +24,7 @@
         <activity android:name=".LoadImageFromUrlFolder.LoadImageFromUrl" />
         <activity android:name=".SlideImageWithViewPagerFolder.SlideImageViewPagerActivity" />
         <activity android:name=".ZoomingFolder.ZoomingActivity" />
+        <activity android:name=".BottomSheetViewFolder.BottomSheetViewActivity"></activity>
     </application>
 
 </manifest>

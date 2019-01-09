@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.hsnlearning.learningandroid.BottomSheetViewFolder.BottomSheetViewActivity;
 import com.hsnlearning.learningandroid.LoadImageFromUrlFolder.LoadImageFromUrl;
 import com.hsnlearning.learningandroid.SlideImageWithViewPagerFolder.SlideImageViewPagerActivity;
 import com.hsnlearning.learningandroid.SpinnerFolder.Spinner1;
@@ -15,7 +16,7 @@ import com.hsnlearning.learningandroid.ZoomingFolder.ZoomingActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button btn1, spinner1btn, loadimgurlbtn, slideimageviewpagerbtn,zoombtn;
+    Button btn1, spinner1btn, loadimgurlbtn, slideimageviewpagerbtn,zoombtn,bottomsheetbtn;
     TextView textView1;
 
     @Override
@@ -36,6 +37,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //for zooming btn
         zoombtn= this.<Button>findViewById(R.id.zoomingbtn);
         zoombtn.setOnClickListener(this);
+
+        //for bottomsheeet view btn
+        bottomsheetbtn= this.<Button>findViewById(R.id.bottomsheetviewbtn);
+        bottomsheetbtn.setOnClickListener(this);
 
         textView1 = this.<TextView>findViewById(R.id.txtview1);
 
@@ -80,6 +85,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         if (id==R.id.zoomingbtn){
             startActivity(new Intent(MainActivity.this,ZoomingActivity.class));
+        }
+        if (id==R.id.bottomsheetviewbtn){
+            startActivity(new Intent(MainActivity.this,BottomSheetViewActivity.class));
         }
     }
 }
