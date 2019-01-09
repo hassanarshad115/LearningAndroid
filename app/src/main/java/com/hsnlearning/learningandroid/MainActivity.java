@@ -11,10 +11,11 @@ import com.hsnlearning.learningandroid.LoadImageFromUrlFolder.LoadImageFromUrl;
 import com.hsnlearning.learningandroid.SlideImageWithViewPagerFolder.SlideImageViewPagerActivity;
 import com.hsnlearning.learningandroid.SpinnerFolder.Spinner1;
 import com.hsnlearning.learningandroid.ToolbarFolder.ToolbarAndroid;
+import com.hsnlearning.learningandroid.ZoomingFolder.ZoomingActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button btn1, spinner1btn, loadimgurlbtn, slideimageviewpagerbtn;
+    Button btn1, spinner1btn, loadimgurlbtn, slideimageviewpagerbtn,zoombtn;
     TextView textView1;
 
     @Override
@@ -31,6 +32,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //SlidingImagewithViewPager
         slideimageviewpagerbtn = this.<Button>findViewById(R.id.SlidingImagewithViewPagerbtn);
         slideimageviewpagerbtn.setOnClickListener(this);
+
+        //for zooming btn
+        zoombtn= this.<Button>findViewById(R.id.zoomingbtn);
+        zoombtn.setOnClickListener(this);
 
         textView1 = this.<TextView>findViewById(R.id.txtview1);
 
@@ -73,6 +78,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (id == R.id.SlidingImagewithViewPagerbtn) {
             startActivity(new Intent(MainActivity.this, SlideImageViewPagerActivity.class));
         }
-
+        if (id==R.id.zoomingbtn){
+            startActivity(new Intent(MainActivity.this,ZoomingActivity.class));
+        }
     }
 }

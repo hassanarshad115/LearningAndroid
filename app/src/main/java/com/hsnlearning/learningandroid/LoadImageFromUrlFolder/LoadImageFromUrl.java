@@ -38,6 +38,7 @@ public class LoadImageFromUrl extends AppCompatActivity {
 
                     }
                 });*/
+
         Picasso.get().load(url).placeholder(R.mipmap.ic_launcher)
                 .error(R.mipmap.ic_launcher)
                 .into(imageView);

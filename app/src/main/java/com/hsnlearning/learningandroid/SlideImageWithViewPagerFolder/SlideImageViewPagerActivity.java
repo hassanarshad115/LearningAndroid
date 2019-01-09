@@ -9,7 +9,7 @@ import com.hsnlearning.learningandroid.R;
 public class SlideImageViewPagerActivity extends AppCompatActivity {
 
 ViewPager viewPager;
-viewPagerAdapter viewPagerAdapter;
+viewPagerAdapter viewPagerAdapter; //ye jo alg class bnae ti uska name h
     private String[] images={
             "https://scontent.flhe3-1.fna.fbcdn.net/v/t1.0-0/p206x206/45627129_2214299228805625_8581932174574354432_n.jpg?_nc_cat=101&_nc_ht=scontent.flhe3-1.fna&oh=26cc2e8a36bf65370d5321eaa55d570a&oe=5CC537FB",
             "https://scontent.flhe3-1.fna.fbcdn.net/v/t1.0-9/45568526_2214299162138965_3507090592481935360_n.jpg?_nc_cat=103&_nc_ht=scontent.flhe3-1.fna&oh=fa16905d4591a965a15aced5158e62e0&oe=5CCFBE80",
