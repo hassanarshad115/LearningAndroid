@@ -35,12 +35,14 @@ dependencies {
     implementation 'com.github.chrisbanes:PhotoView:2.0.0'
 
     //advance seaerch bar
-   //implementation 'com.miguelcatalan:materialsearchview:1.4.0'
+    //implementation 'com.miguelcatalan:materialsearchview:1.4.0'
     //
     implementation 'com.github.claudiodegio:MsvSearch:1.0.0'
 
     //designing k lye
     implementation 'com.android.support:design:28.0.0-alpha1'
 
+    //swipeable back k lye
+    implementation 'com.github.liuguangqiang.swipeback:library:1.0.2@aar'
 
 }
