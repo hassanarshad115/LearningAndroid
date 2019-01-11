@@ -59,7 +59,23 @@
             android:layout_height="match_parent"
             android:text="go to Bottom Sheet View"
             android:id="@+id/bottomsheetviewbtn"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="go to ClipBoard"
+            android:id="@+id/clipboardwbtn"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="go to Back Swipe"
+            android:id="@+id/backswipewbtnklye"/>
 
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="go to Back Swipe original"
+            android:id="@+id/backswipeorignalbtn"/>
     </LinearLayout>
 
 

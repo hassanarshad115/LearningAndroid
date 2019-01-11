@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BackSwipeFolder.BackSwipeActivityTwo">
+    android:orientation="vertical"
+    tools:context=".BackSwipeOrignalFolder.BackSwipeActivityOrignal">
 
-
-
+<!--
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -20,7 +20,7 @@
             android:layout_height="45dp"
             style="@style/Widget.Design.NavigationView"
             progress_color="@color/colorPrimary"
-        />
+            />
 
         <ImageView
             android:layout_width="25dp"
@@ -28,7 +28,7 @@
             android:layout_centerInParent="true"
             android:background="@drawable/ic_action_close" />
 
-    </RelativeLayout>
+    </RelativeLayout>-->
 
     <com.liuguangqiang.swipeback.SwipeBackLayout
         android:id="@+id/swipe_layout"
@@ -54,6 +54,5 @@
 
 
     </com.liuguangqiang.swipeback.SwipeBackLayout>
-
 
 </LinearLayout>

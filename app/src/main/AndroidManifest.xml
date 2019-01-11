@@ -26,7 +26,10 @@
         <activity android:name=".ZoomingFolder.ZoomingActivity" />
         <activity android:name=".BottomSheetViewFolder.BottomSheetViewActivity" />
         <activity android:name=".BackSwipeFolder.BackSwipeActivityOne" />
-        <activity android:name=".BackSwipeFolder.BackSwipeActivityTwo"></activity>
+        <activity android:name=".BackSwipeFolder.BackSwipeActivityTwo" />
+        <activity android:name=".ClipBoardFolder.CopyPasteActivity" />
+        <activity android:name=".CameraPickerFolder.CameraTakePictureActivity" />
+        <activity android:name=".BackSwipeOrignalFolder.BackSwipeActivityOrignal"></activity>
     </application>
 
 </manifest>

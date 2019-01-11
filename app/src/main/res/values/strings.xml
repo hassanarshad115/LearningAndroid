@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">LearningAndroid</string>
+    <string name="app_name">Android            Learning</string>
     <string name="SlidingImagewithViewPager"> Sliding Image with ViewPager</string>
     <string name="Bottomsheetviewbutton1">Bottom sheet view button 1</string>
 </resources>

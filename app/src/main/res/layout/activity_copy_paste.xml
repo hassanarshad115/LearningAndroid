@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClipBoardFolder.CopyPasteActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:layout_marginTop="200dp"
+    android:id="@+id/mylayout"
+    android:layout_height="wrap_content">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/copytxtD"
+        android:layout_weight="1"
+        android:hint="Copy Text"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pastetxtD"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:hint="Paste Text"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mylayout"
+        android:layout_marginTop="30dp"
+        android:weightSum="2">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_light"
+            android:id="@+id/copytxtbtnD"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="Copy text"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_light"
+            android:id="@+id/pastetxtbtnD"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="paste text"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

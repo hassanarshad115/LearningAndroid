@@ -7,16 +7,20 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.hsnlearning.learningandroid.BackSwipeFolder.BackSwipeActivityOne;
+import com.hsnlearning.learningandroid.BackSwipeOrignalFolder.BackSwipeActivityOrignal;
 import com.hsnlearning.learningandroid.BottomSheetViewFolder.BottomSheetViewActivity;
+import com.hsnlearning.learningandroid.ClipBoardFolder.CopyPasteActivity;
 import com.hsnlearning.learningandroid.LoadImageFromUrlFolder.LoadImageFromUrl;
 import com.hsnlearning.learningandroid.SlideImageWithViewPagerFolder.SlideImageViewPagerActivity;
 import com.hsnlearning.learningandroid.SpinnerFolder.Spinner1;
 import com.hsnlearning.learningandroid.ToolbarFolder.ToolbarAndroid;
 import com.hsnlearning.learningandroid.ZoomingFolder.ZoomingActivity;
+import com.liuguangqiang.swipeback.SwipeBackActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button btn1, spinner1btn, loadimgurlbtn, slideimageviewpagerbtn,zoombtn,bottomsheetbtn;
+    Button btn1, spinner1btn, loadimgurlbtn, slideimageviewpagerbtn,zoombtn,bottomsheetbtn,clipboard,backswipe,getBackswipeorgnl;
     TextView textView1;
 
     @Override
@@ -41,6 +45,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //for bottomsheeet view btn
         bottomsheetbtn= this.<Button>findViewById(R.id.bottomsheetviewbtn);
         bottomsheetbtn.setOnClickListener(this);
+
+        //clipboard btn k lye
+        clipboard= this.<Button>findViewById(R.id.clipboardwbtn);
+        clipboard.setOnClickListener(this);
+
+        //back swipe btn
+        backswipe= this.<Button>findViewById(R.id.backswipewbtnklye);
+        backswipe.setOnClickListener(this);
+        //backswipe orignal
+        backswipe= this.<Button>findViewById(R.id.backswipeorignalbtn);
+        backswipe.setOnClickListener(this);
 
         textView1 = this.<TextView>findViewById(R.id.txtview1);
 
@@ -88,6 +103,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         if (id==R.id.bottomsheetviewbtn){
             startActivity(new Intent(MainActivity.this,BottomSheetViewActivity.class));
+        }
+        if (id==R.id.clipboardwbtn){
+            startActivity(new Intent(MainActivity.this,CopyPasteActivity.class));
+        }
+        if (id==R.id.backswipewbtnklye){
+            startActivity(new Intent(MainActivity.this,BackSwipeActivityOne.class));
+        }
+        if (id==R.id.backswipeorignalbtn){
+            startActivity(new Intent(MainActivity.this,BackSwipeActivityOrignal.class));
         }
     }
 }

@@ -44,5 +44,7 @@ dependencies {
 
     //swipeable back k lye
     implementation 'com.github.liuguangqiang.swipeback:library:1.0.2@aar'
+    implementation 'com.github.liuguangqiang.prettyprogressbar:library:+'
+
 
 }
