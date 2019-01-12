@@ -1,26 +1,30 @@
 package com.hsnlearning.learningandroid;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.hsnlearning.learningandroid.AnimationAxisFolder.AnimationAxisActivity;
 import com.hsnlearning.learningandroid.BackSwipeFolder.BackSwipeActivityOne;
 import com.hsnlearning.learningandroid.BackSwipeOrignalFolder.BackSwipeActivityOrignal;
 import com.hsnlearning.learningandroid.BottomSheetViewFolder.BottomSheetViewActivity;
+import com.hsnlearning.learningandroid.CameraPickerFolder.CameraTakePictureActivity;
 import com.hsnlearning.learningandroid.ClipBoardFolder.CopyPasteActivity;
+import com.hsnlearning.learningandroid.FrameAnimationFolder.FrameAnimationActivity;
 import com.hsnlearning.learningandroid.LoadImageFromUrlFolder.LoadImageFromUrl;
+import com.hsnlearning.learningandroid.PlayYoutubeFolder.PlayYoutubeActivity;
 import com.hsnlearning.learningandroid.SlideImageWithViewPagerFolder.SlideImageViewPagerActivity;
 import com.hsnlearning.learningandroid.SpinnerFolder.Spinner1;
 import com.hsnlearning.learningandroid.ToolbarFolder.ToolbarAndroid;
 import com.hsnlearning.learningandroid.ZoomingFolder.ZoomingActivity;
-import com.liuguangqiang.swipeback.SwipeBackActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button btn1, spinner1btn, loadimgurlbtn, slideimageviewpagerbtn,zoombtn,bottomsheetbtn,clipboard,backswipe,getBackswipeorgnl;
+    Button captureImage,webviewbtnklye,frameanimation,xyanimation;
     TextView textView1;
 
     @Override
@@ -54,8 +58,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         backswipe= this.<Button>findViewById(R.id.backswipewbtnklye);
         backswipe.setOnClickListener(this);
         //backswipe orignal
-        backswipe= this.<Button>findViewById(R.id.backswipeorignalbtn);
-        backswipe.setOnClickListener(this);
+        getBackswipeorgnl= this.<Button>findViewById(R.id.backswipeorignalbtn);
+        getBackswipeorgnl.setOnClickListener(this);
+        //caputure Image
+        captureImage= this.<Button>findViewById(R.id.activityCamerabtn);
+        captureImage.setOnClickListener(this);
+        //webview btn klye
+        webviewbtnklye= this.<Button>findViewById(R.id.webviewbtn);
+        webviewbtnklye.setOnClickListener(this);
+
+        //frameanimation
+        frameanimation= this.<Button>findViewById(R.id.frameanimationbtn);
+        frameanimation.setOnClickListener(this);
+        //X Y animation
+        xyanimation= this.<Button>findViewById(R.id.xyanimationbtn);
+        xyanimation.setOnClickListener(this);
 
         textView1 = this.<TextView>findViewById(R.id.txtview1);
 
@@ -112,6 +129,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         if (id==R.id.backswipeorignalbtn){
             startActivity(new Intent(MainActivity.this,BackSwipeActivityOrignal.class));
+        }
+        if (id==R.id.activityCamerabtn){
+            startActivity(new Intent(MainActivity.this,CameraTakePictureActivity.class));
+        }if (id==R.id.webviewbtn){
+            startActivity(new Intent(MainActivity.this,PlayYoutubeActivity.class));
+        }
+        if (id==R.id.frameanimationbtn){
+            startActivity(new Intent(MainActivity.this,FrameAnimationActivity.class));
+        }
+        if (id==R.id.xyanimationbtn){
+            startActivity(new Intent(MainActivity.this,AnimationAxisActivity.class));
         }
     }
 }

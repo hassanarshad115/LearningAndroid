@@ -76,6 +76,26 @@
             android:layout_height="match_parent"
             android:text="go to Back Swipe original"
             android:id="@+id/backswipeorignalbtn"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="go to Picture Capture"
+            android:id="@+id/activityCamerabtn"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="go to Youtube"
+            android:id="@+id/webviewbtn"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="go to Frame Animation"
+            android:id="@+id/frameanimationbtn"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="go to X,Y Animation"
+            android:id="@+id/xyanimationbtn"/>
     </LinearLayout>
 
 

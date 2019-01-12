@@ -5,8 +5,10 @@
     <!-- internet ki permission k lye -->
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <!-- ye nichyy phli line lazmi add krni h ismy or oper android:permission=" wali b" -->
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="true"
         android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -29,7 +31,10 @@
         <activity android:name=".BackSwipeFolder.BackSwipeActivityTwo" />
         <activity android:name=".ClipBoardFolder.CopyPasteActivity" />
         <activity android:name=".CameraPickerFolder.CameraTakePictureActivity" />
-        <activity android:name=".BackSwipeOrignalFolder.BackSwipeActivityOrignal"></activity>
+        <activity android:name=".BackSwipeOrignalFolder.BackSwipeActivityOrignal" />
+        <activity android:name=".PlayYoutubeFolder.PlayYoutubeActivity" />
+        <activity android:name=".FrameAnimationFolder.FrameAnimationActivity" />
+        <activity android:name=".AnimationAxisFolder.AnimationAxisActivity"></activity>
     </application>
 
 </manifest>
